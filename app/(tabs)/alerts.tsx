@@ -57,7 +57,7 @@ interface AlertItem {
 const alerts = () => {
     const [data, setData] = useState<AlertItem[]>([]);
     const [loading, setLoading] = useState(true);
-
+    console.log(data);
     useEffect(() => {
         fetchData();
     }, []);
